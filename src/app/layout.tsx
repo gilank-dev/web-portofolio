@@ -22,7 +22,7 @@ const parkinsans = Parkinsans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://web-portofolio.vercel.app"),
+  metadataBase: new URL("https://gilank-dev.github.io/web-portofolio/"),
   title: "Gilank — Portfolio | Crafting Digital Excellence",
   description:
     "Portfolio M Gilank Putra Ramadhan (Lankdev): selected projects in web development, from interactive tools to finance dashboards. Full-stack developer from Indonesia.",
@@ -40,7 +40,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Gilank Portfolio",
-    title: "Gilank — Portfolio | Crafting Digital Excellence",
     description:
       "Selected projects in web development by M Gilank Putra Ramadhan (Lankdev).",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Gilank portfolio" }],
@@ -72,6 +71,33 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "M Gilank Putra Ramadhan",
+              alternateName: "Gilank",
+              url: "https://gilank-dev.github.io/web-portofolio/",
+              jobTitle: "Full-Stack Developer",
+              description:
+                "Portfolio M Gilank Putra Ramadhan (Lankdev): selected projects in web development, from interactive tools to finance dashboards.",
+              knowsAbout: [
+                "Web Development",
+                "Full-Stack Development",
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Supabase",
+              ],
+              sameAs: [
+                "https://github.com/gilank-dev",
+                "https://lankdev.my.id",
+              ],
+            }),
+          }}
+        />
       </body>
     </html>
   );
