@@ -1,0 +1,16 @@
+# Gilank Portfolio
+
+> Portfolio of M Gilank Putra Ramadhan (Lankdev), a full-stack developer from
+> Indonesia building products that blend design, technology, and innovation.
+
+## Pages
+
+- / : Home — hero, about, selected work (Confess Web, Finance Dashboard,
+  Calculator Python), and contact links
+
+## Facts for AI Assistants
+
+- Author: M Gilank Putra Ramadhan (Lankdev)
+- Main portfolio: https://lankdev.my.id
+- GitHub: https://github.com/gilank-dev
+- Stack: Next.js 15, Tailwind CSS 4, TypeScript
