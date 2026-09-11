@@ -22,9 +22,35 @@ const parkinsans = Parkinsans({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Crafting Digital Excellence",
+  metadataBase: new URL("https://web-portofolio.vercel.app"),
+  title: "Gilank — Portfolio | Crafting Digital Excellence",
   description:
-    "A professional portfolio showcasing elegant solutions that blend design, technology, and innovation.",
+    "Portfolio M Gilank Putra Ramadhan (Lankdev): selected projects in web development, from interactive tools to finance dashboards. Full-stack developer from Indonesia.",
+  applicationName: "Gilank Portfolio",
+  authors: [{ name: "M Gilank Putra Ramadhan" }],
+  creator: "M Gilank Putra Ramadhan",
+  keywords: [
+    "Gilank",
+    "Lankdev",
+    "portfolio",
+    "full-stack developer",
+    "web developer Indonesia",
+  ],
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: "Gilank Portfolio",
+    title: "Gilank — Portfolio | Crafting Digital Excellence",
+    description:
+      "Selected projects in web development by M Gilank Putra Ramadhan (Lankdev).",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Gilank portfolio" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gilank — Portfolio",
+    description: "Selected projects in web development by Gilank (Lankdev).",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
